@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+  Girly by FreeHTML5.co
+  Twitter: https://twitter.com/fh5co
+  Facebook: https://fb.com/fh5co
+  URL: https://freehtml5.co
+-->
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Be my Eye ❤️</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md  fixed-top maine-menu">
+        <div class="container">
+          <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
+          <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">About</a></li>
+             <li class="nav-item"> <a class="nav-link" href="#social-media" tabindex="-1" aria-disabled="true">Social Media</a></li>
+              <li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container-fluid fh5co-home-banner">
+    <div class="card"> <img class="card-img" src="{% static 'img/slider3.jpg' %}" alt="">
+        <div class="card-img-overlay">
+        <div class="center-text">
+            <h2 class="card-title">Could you be my eye ? </h2>
+            <a href="#about" class="btn">
+            <svg width="201" height="51" viewBox="0 0 201 51">
+                <defs>
+                <style>
+                .cls-1 {
+                    fill: none;
+                    stroke-width: 1px;
+                    stroke: url(#linear-gradient);
+                }
+                </style>
+                <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#e90e65"/>
+                <stop offset="1" stop-color="#fff"/>
+                </linearGradient>
+            </defs>
+            <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
+            </svg>
+        Explore</a> </div>
+        </div>
+    </div>
+    </div>
+    {% block content %}
+    {% endblock %} 
+    <footer class="container-fluid p-0 pr-0">
+        <div class="copy pt-4 pb-4">
+        <p>Made with ❤️ to Be My Eye</p>
+        </div>
+    </footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+  <script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script> 
+  <script src="{% static 'js/popper.min.js' %}" ></script> 
+  <script src="{% static 'js/bootstrap.min.js' %}"></script> 
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script> 
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

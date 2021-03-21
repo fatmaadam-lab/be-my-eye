@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <!-- Blog content section -->
+  <section class="fh5co-blog-content">
+    <div class="blog-content-bckg">
+      <div class="blog-content-inner">
+        <div class="container-fluid">
+          <h2 class="card-title">Our latest blog news</h2>
+          {% for i in posts %}
+          <div class="row single-blog">
+            <div class="col-xl-8 col-lg-12 single-blog__text">
+              <h2>{{ i.title }}</h2>
+              <p>{{ i.content }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog content section end -->
+
+{% endblock %}

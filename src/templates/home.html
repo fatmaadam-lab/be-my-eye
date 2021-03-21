@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container-fluid fh5co-recent-work">
+    <div class="container contact-pop">
+      <div class="row">
+        <div class="col-md-6  pr-0">
+          <div class="card"> <img class="card-img w-100" src="{% static 'img/about.gif' %}" alt="">
+            <div class="card-img-overlay"> </div>
+          </div>
+        </div>
+        <div class="col-md-6 pl-0" id="about">
+          <div class="content">
+            <h3>BE MY EYEE</h3>
+            <h4>Helper website for blind</h4>
+            <hr />
+            <p>Be my Eyee is sample website has been build to help blind people and make a awareness to people  about helping blind through blog post. </p>
+            <a href="#social-media" class="btn">Follow Us</a> </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container-fluid fh5co-recent-work activity">
+    <div class="container recent">
+      <div class="row">
+        <h2>Recentally Blog Post</h2>
+        <div class="owl-carousel owl-carousel3 owl-theme">
+          <div>
+            <div class="card"> <img class="card-img" src="{% static 'img/blog1.jpg' %}" alt="">
+              <div class="card-img-overlay">
+                <div class="bottom-text">
+                  <h5 class="card-title">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
+                  <a href="#">Read more <img src="{% static 'img/double-right.svg' %}" alt=""></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card"> <img class="card-img" src="{% static 'img/blog3.jpeg' %}"  alt="">
+              <div class="card-img-overlay">
+                <div class="bottom-text">
+                  <h5 class="card-title">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
+                  <a href="#">Read more <img src="{% static 'img/double-right.svg' %}" alt=""></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card"> <img class="card-img" src="{% static 'img/blog2.jpg' %}" alt="">
+              <div class="card-img-overlay">
+                <div class="bottom-text">
+                  <h5 class="card-title">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
+                  <a href="#">Read more <img src="{% static 'img/double-right.svg' %}" alt=""></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fh5co-insta-feed activity" id="social-media">
+    <div class="container recent">
+      <div class="row mb-5 pb-5">
+        <div class="col-lg-6">
+          <div class="twit-box">
+            <div class="media mb-3"> <img class="align-self-start mr-3 rounded-circle" src="{% static 'img/logotweet.jpg' %}" width="30%" height="50%" alt="">
+              <div class="media-body">
+                <h5 class="mb-0 mt-3">Fatma Adam</h5>
+                <p>@_fatmaadam</p>
+              </div>
+            </div>
+            <p class="text-justify"> Software Developer who very intersted sharing knowldge and help couminties to grow up.Software Developer who very intersted sharing knowldge and help couminties to grow up. Software Developer who very intersted sharing knowldge and help couminties to grow up.  </p>
+            <div class="clearfix"> <a href="#" class="btn btn-primary mt-2 float-right">Follow</a> </div>
+          </div>
+        </div>
+        <div class="col-lg-6 feed-caro">
+          <h2>Instagram feed</h2>
+          <div class="owl-carousel owl-carousel4 owl-theme">
+            <div>
+              <div class="card"> <img class="card-img" src="{% static 'img/blog1' %}" alt="">
+                <div class="card-img-overlay"> </div>
+              </div>
+            </div>
+            <div>
+              <div class="card"> <img class="card-img" src="{% static 'img/blog3.jpeg' %}"  alt="">
+                <div class="card-img-overlay"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-center d-block">Find me on social media</h2>
+      <div class="row social-links">
+        <ul class="nav mx-auto">
+          <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com"><img src="{% static 'img/facebook.png' %}" alt=""></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://twitter.com/_fatmaadam"><img src="{% static 'img/twitter.png' %}" alt=""></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#"><img src="{% static 'img/pinterest.png' %}" alt=""></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#"><img src="{% static 'img/google-plus.png' %}" alt=""></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
